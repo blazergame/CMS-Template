@@ -1,2 +1,1 @@
-# CMS-Template
-CMS-Template
+## CMS-Template
