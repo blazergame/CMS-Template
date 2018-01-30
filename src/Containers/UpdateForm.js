@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../Components/Header.js';
 
 class UpdateForm extends Component {
 
@@ -23,28 +24,33 @@ class UpdateForm extends Component {
     render(){
         return (
             <div>
+
+                <Header />
                 <form onSubmit={this.handleSubmit}>
                     <label >
-                        Title: <input type="text" name="title" onChange={this.handleChanges}/> 
+                        Header Button: <input type="text" name="title" onChange={this.handleChanges}/> 
                     </label>
                     <input type='submit' value="Submit" />
 
-                    <br/> <br/>
                 </form>
-
-                <form onSubmit={this.handleSubmit}>
-                    <label>
-                        Search:  <input type="text" name="search"  onChange={this.handleChanges}/>
-                    </label>
-                    <input type='submit' value="Submit" />
-                </form>
+                <br/> <br/>
 
                 <form onSubmit={this.handleSubmit}>
                     <label>
-                        Next:  <input type="text" name="next"  onChange={this.handleChanges}/>
+                        First Paragraph Button:  <input type="text" name="search"  onChange={this.handleChanges}/>
                     </label>
                     <input type='submit' value="Submit" />
                 </form>
+                <br/> <br/>
+
+                <form onSubmit={this.handleSubmit}>
+                    <label>
+                        Second Paragraph Button:  <input type="text" name="next"  onChange={this.handleChanges}/>
+                    </label>
+                    <input type='submit' value="Submit" />
+                </form>
+
+                <br/> <br/>
             </div>
         )
     }
